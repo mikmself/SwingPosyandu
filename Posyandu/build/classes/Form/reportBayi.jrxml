@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="800" pageHeight="900" columnWidth="760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2a87ab09-f90b-404c-a16a-77cb6e45eb2e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[select *from bayi]]>
+	</queryString>
+	<field name="id_bayi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_bayi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_ayah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_ibu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tempat_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="anak_ke" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a108116f-8472-4de9-be2e-46919b7a22e7" style="Title" x="49" y="0" width="670" height="70"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[BAYI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="56" splitType="Stretch">
+			<line>
+				<reportElement uuid="5676f4b0-4e0f-4c35-9f24-0b3aa6ead8fe" positionType="FixRelativeToBottom" x="0" y="37" width="760" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="c669badd-6d2d-4d0f-b371-234e68b0d821" style="Column header" x="0" y="19" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cf0351a3-7c99-4c4f-bfc8-083bb9691f0b" style="Column header" x="85" y="19" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Bayi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6c916774-bb6a-4a90-8b36-bb79653afadd" style="Column header" x="183" y="19" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Ayah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5f655b09-7749-460e-a6ae-de7ecbe4db8e" style="Column header" x="280" y="19" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Ibu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35edd94f-8cce-470e-9dc1-5effc0d04f05" style="Column header" x="380" y="19" width="90" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tempat Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fa3d6d4f-3400-46f2-ae45-b5c68c9f0eab" style="Column header" x="493" y="19" width="88" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1b5b686e-bf29-4901-89d7-78fef4708774" style="Column header" x="601" y="19" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Anak Ke]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a6c48d2f-6041-4b79-9dbf-a9c00721744e" style="Column header" x="691" y="19" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<line>
+				<reportElement uuid="57e2b724-6dc9-49f7-86be-1b3f4fdf928a" positionType="FixRelativeToBottom" x="0" y="15" width="760" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="108fa6c5-e374-4f6c-9442-a1fa0170bac7" style="Detail" x="0" y="0" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id_bayi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4441f5e5-b228-41fe-9b25-93af3e240573" style="Detail" x="85" y="0" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_bayi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="914ae31b-4534-4fc7-bbab-220bf7a75334" style="Detail" x="183" y="1" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_ayah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="90fa0de2-5eb8-4ae2-b33b-06a8a000710a" style="Detail" x="280" y="1" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_ibu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="62e10a66-a683-4185-acd4-ea0b14fc09ac" style="Detail" x="380" y="1" width="90" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tempat_lahir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="befc390d-db99-49fd-887e-2dc35f525b5c" style="Detail" x="493" y="0" width="88" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="18bcc8c4-8023-4c2f-b0e8-2737ca52dee8" style="Detail" x="601" y="0" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{anak_ke}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="019c47c4-d687-420f-bd91-9bff9f6e3e94" style="Detail" x="691" y="1" width="69" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement uuid="6f8fbf42-8328-4351-a584-1067f80859be" positionType="FixRelativeToBottom" x="0" y="3" width="760" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement uuid="5cc21a23-8746-46e9-9d05-8b3d904920ab" style="Column header" x="601" y="1" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="6bd0fc79-3b6a-4447-a5ac-4bb36d246be1" style="Column header" x="719" y="1" width="40" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="5c3b8b32-8705-41df-9d77-4d156a981973" style="Column header" x="0" y="0" width="197" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

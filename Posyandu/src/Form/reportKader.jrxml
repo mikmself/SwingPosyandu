@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="800" pageHeight="900" columnWidth="760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5ae2c4af-fe35-4c42-9f45-cb96b042fc78">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select *from kader]]>
+	</queryString>
+	<field name="id_kader" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_kader" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tempat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_telp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="7985b8d4-0a19-453a-9bc3-345b91b5909b" mode="Opaque" x="-20" y="-20" width="804" height="92" backcolor="#006699"/>
+				<staticText>
+					<reportElement uuid="6b894cb5-5e6e-49ef-8bd4-8f5ed86a2592" x="20" y="20" width="575" height="56" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center">
+						<font size="36" isBold="true"/>
+					</textElement>
+					<text><![CDATA[KADER]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="371b6951-76f0-4af3-a2be-e5a963f58e34" x="613" y="56" width="180" height="20" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[APLIKASI POSYANDU]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="34">
+			<line>
+				<reportElement uuid="7171ea6a-26f2-424c-8e11-80f5802047bd" x="-20" y="20" width="804" height="1" forecolor="#666666"/>
+			</line>
+			<staticText>
+				<reportElement uuid="af079441-e41d-4971-8e30-ddfb963c6da4" mode="Opaque" x="0" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Kader]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="38c02da2-9849-4f1f-ac7d-7607008fa432" mode="Opaque" x="118" y="0" width="104" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Kader]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="409f4e6c-fe48-4f1e-bfd8-e6066ff53d24" mode="Opaque" x="260" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tempat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6096ec55-2d91-4b14-b0cf-6e82e553cc22" mode="Opaque" x="384" y="0" width="150" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a0c38b6a-87d2-4bd0-a862-1f8a3c29a040" mode="Opaque" x="565" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5a9a89df-c794-4be7-a2d7-645fe0e5837c" mode="Opaque" x="681" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.Telepon]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43">
+			<line>
+				<reportElement uuid="ab43eed8-3ee7-4a77-9af2-1460a70082e9" positionType="FixRelativeToBottom" x="0" y="19" width="784" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="28e4ef07-9926-4543-987b-5e4fcb608a39" x="0" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_kader}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="d75d4c32-486c-4c6f-be78-a3c8ffdf289d" x="260" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tempat}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="c3cda0d4-c1ea-4a58-a33e-614ac8c26d95" x="565" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="5aa514ce-68ff-469f-98c0-f75a0c8d096f" x="671" y="0" width="102" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_telp}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="267dd06b-c5d4-4a28-a6cd-1a64fd4a8a72" x="384" y="0" width="150" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="fa94852d-7137-4ee2-98cf-877285a4a460" x="118" y="0" width="104" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_kader}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement uuid="e216e0cc-235e-4efb-b61d-9e3dae098e4a" mode="Opaque" x="0" y="4" width="720" height="13" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="af8dbb0c-c7eb-435b-886b-b55d709ee7e7" mode="Opaque" x="720" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="8fbc9c3d-b986-4602-9ed7-89fb230177f0" x="0" y="4" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

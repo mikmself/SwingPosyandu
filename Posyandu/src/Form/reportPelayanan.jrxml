@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="800" pageHeight="900" columnWidth="760" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c493b160-df4d-484c-870d-7d0175de3df0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[select *from pelayanan_bayi]]>
+	</queryString>
+	<field name="id_pelayanan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_bayi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_kader" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_bidan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_pelayanan" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="berat_bayi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tinggi_bayi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_imunisasi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_vitamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="d3c3c5b3-19da-4488-9147-70c7ac6a36e1" style="Title" x="0" y="0" width="760" height="70"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[Pelayanan Bayi]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="51" splitType="Stretch">
+			<line>
+				<reportElement uuid="c00f6e15-3d98-4a8a-a7ee-71c9e266cde4" positionType="FixRelativeToBottom" x="0" y="34" width="760" height="2"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement uuid="ce6c259c-c386-4286-a437-a9eb9595e691" style="Column header" x="0" y="19" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="100164a0-5078-4662-8fd3-9eb6a595d46f" style="Column header" x="61" y="19" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Id Bayi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="24f6b3d2-467c-4e3d-9c23-b5a169f4cbda" style="Column header" x="122" y="19" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Id Kader]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0c017715-5478-477c-8573-657f81733a9e" style="Column header" x="197" y="19" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Id Bidan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ba662e22-ca8c-462f-9bcb-34f365e4ad14" style="Column header" x="260" y="19" width="112" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tanggal Pelayanan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="dfc4e489-8546-4980-99ed-349a851299e9" style="Column header" x="383" y="19" width="61" height="15"/>
+				<textElement/>
+				<text><![CDATA[Berat Bayi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e8d4f2d7-21ff-4ace-9f90-c94b954b0558" style="Column header" x="458" y="19" width="80" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tinggi Bayi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8ea1ce36-fdb6-4fe3-9e33-7260fcdda8fa" style="Column header" x="555" y="19" width="105" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jenis Imunisasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7e4e5285-c229-4789-8c7e-774767be705d" style="Column header" x="674" y="19" width="86" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jenis Vitamin]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="64" splitType="Stretch">
+			<line>
+				<reportElement uuid="790c28c4-2a7f-4063-bb18-f8cbe7dc117c" positionType="FixRelativeToBottom" x="0" y="15" width="760" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement uuid="06c92f1f-3375-4195-988a-1792ba856ed0" style="Detail" x="0" y="0" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id_pelayanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a5943e98-5ebf-416d-bf5d-395f8c781888" style="Detail" x="61" y="0" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id_bayi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6ee9b49e-4e21-4b3b-9efa-2c2400170ba8" style="Detail" x="122" y="0" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id_kader}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dc58cb1a-15db-49e7-a5d9-37e44e8e2fbb" style="Detail" x="199" y="0" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id_bidan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="47abb33c-1499-4378-97c9-f79738be23d2" style="Detail" x="260" y="0" width="112" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tanggal_pelayanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d2fafcdc-1977-4579-bc5f-89e189d86729" style="Detail" x="383" y="1" width="61" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{berat_bayi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e4319ba1-6526-40f4-b035-965c40b41029" style="Detail" x="458" y="0" width="80" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tinggi_bayi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f05e2b70-a2be-45da-b223-07695bac4335" style="Detail" x="674" y="1" width="86" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{jenis_vitamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="312d631f-09b3-4427-94c6-a88616b779c5" style="Detail" x="555" y="1" width="105" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{jenis_imunisasi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement uuid="01ea12ee-7216-4834-adcc-36bae72cdacb" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement uuid="7c437eff-7291-4894-84d8-83c32aa209d4" style="Column header" x="640" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="a9de68d6-5d99-4525-a5e3-cd70a2c43ab0" style="Column header" x="720" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="1a2906dd-d8ef-4eb8-8856-6c7ae54b6722" style="Column header" x="0" y="0" width="458" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
